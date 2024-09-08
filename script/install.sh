@@ -8,7 +8,6 @@ trap "sleep 1; echo" EXIT
 plugin_name="InappReviewPlugin"
 target_directory=""
 zip_file_path=""
-use_debug_library=false
 
 
 function display_help()
@@ -21,7 +20,6 @@ function display_help()
 	echo
 	./script/echocolor.sh -Y "Options:"
 	./script/echocolor.sh -y "	h	display usage information"
-	./script/echocolor.sh -y "	d	configure to use debug library"
 	./script/echocolor.sh -y "	t	specify the path for target directory"
 	./script/echocolor.sh -y "	z	specify the path for zip file"
 	echo
@@ -59,9 +57,6 @@ while getopts "hdt:z:" option; do
 		h)
 			display_help
 			exit;;
-		d)
-			use_debug_library=true
-			;;
 		t)
 			if ! [[ -z $OPTARG ]]
 			then
@@ -97,9 +92,3 @@ fi
 display_status "installing $zip_file_path in $target_directory"
 
 unzip -o $zip_file_path -d $target_directory
-
-if [[ $use_debug_library ]]
-then
-	display_status "switching to use $plugin_name.debug"
-	sed -i '' -e "s/$plugin_name.release./$plugin_name.debug./g" $target_directory/ios/plugins/$plugin_name.gdip
-fi
