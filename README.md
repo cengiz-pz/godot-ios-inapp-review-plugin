@@ -22,7 +22,9 @@ There are 2 ways to install the `In-app Review Plugin` into your project:
 - unzip the release archive
 - copy contents of the unzipped directory into your project's root directory
 - enable the plugin via the `Plugins` tab of `Project->Project Settings...` menu, in the Godot Editor
+
 <br/><br/>
+
 ## ![](addon/icon.png?raw=true) Usage
 Add an `InappReview` node to your scene and follow the following steps:
 - register listeners for the following signals emitted from the `InappReview` node
@@ -31,11 +33,15 @@ Add an `InappReview` node to your scene and follow the following steps:
 	- Apple's StoreKit API will display a review dialog
 	- Dialog may not be displayed if the review flow was launched recently
 - normal app functionality can resume when `review_flow_launched` signal is received
+
 <br/><br/>
+
 ## ![](addon/icon.png?raw=true) Export to iOS
 Follow instructions on the following page to export your project and run on an iOS device:
 - [Exporting for iOS](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_ios.html)
+
 <br/><br/><br/>
+
 ---
 # ![](addon/icon.png?raw=true) Credits
 Based on [DrMoriarty](https://github.com/DrMoriarty)'s [Godot iOS Plugin Template](https://github.com/DrMoriarty/godot_ios_plugin_template)
@@ -43,3 +49,16 @@ Based on [DrMoriarty](https://github.com/DrMoriarty)'s [Godot iOS Plugin Templat
 Developed by [Cengiz](https://github.com/cengiz-pz)
 
 Original repository: [Godot iOS In-app Review Plugin](https://github.com/cengiz-pz/godot-ios-inapp-review-plugin)
+
+<br/><br/><br/>
+
+---
+# ![](addon/icon.png?raw=true) All Plugins
+
+| Plugin | Android | iOS |
+| :---: | :--- | :--- |
+| Notification Scheduler | https://github.com/cengiz-pz/godot-android-notification-scheduler-plugin | https://github.com/cengiz-pz/godot-ios-notification-scheduler-plugin |
+| Admob | https://github.com/cengiz-pz/godot-android-admob-plugin | https://github.com/cengiz-pz/godot-ios-admob-plugin |
+| Deeplink | https://github.com/cengiz-pz/godot-android-deeplink-plugin | https://github.com/cengiz-pz/godot-ios-deeplink-plugin |
+| Share | https://github.com/cengiz-pz/godot-android-share-plugin | https://github.com/cengiz-pz/godot-ios-share-plugin |
+| In-App Review | https://github.com/cengiz-pz/godot-android-inapp-review-plugin | https://github.com/cengiz-pz/godot-ios-inapp-review-plugin |
