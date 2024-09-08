@@ -5,7 +5,7 @@
 [config]
 
 name="InappReviewPlugin"
-binary="InappReviewPlugin.release.xcframework"
+binary="InappReviewPlugin.xcframework"
 initialization="InappReviewPlugin_init"
 deinitialization="InappReviewPlugin_deinit"
 use_swift_runtime=true
