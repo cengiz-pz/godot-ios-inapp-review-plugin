@@ -5,7 +5,7 @@
 set -e
 trap "sleep 1; echo" EXIT
 
-plugin_name="InappReviewPlugin"	# value is replaced by init.sh
+plugin_name="InappReviewPlugin"
 PLUGIN_VERSION=''
 supported_godot_versions=("4.2" "4.3" "4.4")
 BUILD_TIMEOUT=40	# increase this value using -t option if device is not able to generate all headers before godot build is killed
@@ -118,10 +118,14 @@ function clean_plugin_build()
 }
 
 
-function remove_pod_repo_trunk()
+function remove_pods()
 {
-	rm -rf ./Pods/
-	pod repo remove trunk
+	if [[ -d ./Pods ]]
+	then
+		rm -rf ./Pods/
+	else
+		display_warning "Warning: './Pods' directory does not exist"
+	fi
 }
 
 
@@ -401,7 +405,7 @@ fi
 
 if [[ "$do_remove_pod_trunk" == true ]]
 then
-	remove_pod_repo_trunk
+	remove_pods
 fi
 
 if [[ "$do_remove_godot" == true ]]
