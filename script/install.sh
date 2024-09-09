@@ -16,7 +16,7 @@ function display_help()
 	./script/echocolor.sh -y "The " -Y "$0 script" -y " installs plugin in the specified directory"
 	echo
 	./script/echocolor.sh -Y "Syntax:"
-	./script/echocolor.sh -y "	$0 [-h|d|t <target directory path>|z <zip file path>]"
+	./script/echocolor.sh -y "	$0 [-h|t <target directory path>|z <zip file path>]"
 	echo
 	./script/echocolor.sh -Y "Options:"
 	./script/echocolor.sh -y "	h	display usage information"

@@ -7,7 +7,6 @@ extends EditorPlugin
 const PLUGIN_NODE_TYPE_NAME = "InappReview"
 const PLUGIN_PARENT_NODE_TYPE = "Node"
 const PLUGIN_NAME: String = "InappReviewPlugin"
-const PLUGIN_VERSION: String = "1.0"
 
 var export_plugin: IosExportPlugin
 

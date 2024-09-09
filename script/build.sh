@@ -7,7 +7,7 @@ trap "sleep 1; echo" EXIT
 
 plugin_name="InappReviewPlugin"	# value is replaced by init.sh
 PLUGIN_VERSION=''
-supported_godot_versions=("4.0" "4.1" "4.2")
+supported_godot_versions=("4.2" "4.3" "4.4")
 BUILD_TIMEOUT=40	# increase this value using -t option if device is not able to generate all headers before godot build is killed
 
 DESTDIR="./bin/release"
@@ -38,9 +38,9 @@ function display_help()
 	./script/echocolor.sh -y "	$0 [-a|A <godot version>|c|g|G <godot version>|h|H|i|p|P|t <timeout>|z <version>]"
 	echo
 	./script/echocolor.sh -Y "Options:"
-	./script/echocolor.sh -y "	a	generate godot headers, build plugin, and create zip archive"
-	./script/echocolor.sh -y "	A	download specified godot version, generate godot headers,"
-	./script/echocolor.sh -y "	 	build plugin, and create zip archive"
+	./script/echocolor.sh -y "	a	generate godot headers and build plugin"
+	./script/echocolor.sh -y "	A	download specified godot version, generate godot headers, and"
+	./script/echocolor.sh -y "	 	build plugin"
 	./script/echocolor.sh -y "	b	build plugin"
 	./script/echocolor.sh -y "	c	remove any existing plugin build"
 	./script/echocolor.sh -y "	g	remove godot directory"
@@ -320,7 +320,6 @@ while getopts "aA:bcgG:hHipPt:z:" option; do
 			do_generate_headers=true
 			do_install_pods=true
 			do_build=true
-			do_create_zip=true
 			;;
 		A)
 			GODOT_VERSION=$OPTARG
@@ -328,7 +327,6 @@ while getopts "aA:bcgG:hHipPt:z:" option; do
 			do_generate_headers=true
 			do_install_pods=true
 			do_build=true
-			do_create_zip=true
 			;;
 		b)
 			do_build=true
