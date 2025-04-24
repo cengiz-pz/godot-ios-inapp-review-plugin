@@ -10,12 +10,12 @@
 PluginClass *plugin;
 
 void InappReviewPlugin_init() {
-    plugin = memnew(PluginClass);
-    Engine::get_singleton()->add_singleton(Engine::Singleton("InappReviewPlugin", plugin));
+	plugin = memnew(PluginClass);
+	Engine::get_singleton()->add_singleton(Engine::Singleton("InappReviewPlugin", plugin));
 }
 
 void InappReviewPlugin_deinit() {
    if (plugin) {
-       memdelete(plugin);
+	   memdelete(plugin);
    }
 }

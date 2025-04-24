@@ -10,13 +10,13 @@ extern String const REVIEW_FLOW_LAUNCHED_SIGNAL;
 
 
 class PluginClass : public Object {
-    GDCLASS(InappReviewPlugin, Object);
-    
-    static void _bind_methods();
-    
+	GDCLASS(InappReviewPlugin, Object);
+
+	static void _bind_methods();
+
 public:
-    void launch_review_flow ();
-    
-    PluginClass();
-    ~PluginClass();
+	void launch_review_flow ();
+
+	PluginClass();
+	~PluginClass();
 };
