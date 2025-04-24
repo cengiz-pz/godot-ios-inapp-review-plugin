@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bvb3ltmpkaso3"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_ut41m"]
+[ext_resource type="Script" uid="uid://fkta25bsptq7" path="res://Main.gd" id="1_ut41m"]
 [ext_resource type="Texture2D" uid="uid://dr1ksqyo7r2xn" path="res://inappreview.png" id="2_cgov0"]
-[ext_resource type="Script" path="res://addons/InappReviewPlugin/InappReview.gd" id="3_m6sqx"]
+[ext_resource type="Script" uid="uid://dn8mp6rsb5k66" path="res://addons/InappReviewPlugin/InappReview.gd" id="3_m6sqx"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ut41m")
