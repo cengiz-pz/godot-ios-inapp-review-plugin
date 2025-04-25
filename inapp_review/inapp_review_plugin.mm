@@ -5,8 +5,8 @@
 
 #include "core/config/project_settings.h"
 
-#import "godot_plugin_class.h"
-#import "godot_plugin-Swift.h"
+#import "inapp_review_plugin.h"
+#import "inapp_review_plugin-Swift.h"
 
 
 String const REVIEW_FLOW_LAUNCHED_SIGNAL = "review_flow_launched";

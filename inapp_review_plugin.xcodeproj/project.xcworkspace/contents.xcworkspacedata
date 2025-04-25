@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:godot_plugin.xcodeproj">
+      location = "self:">
    </FileRef>
    <FileRef
       location = "group:.">

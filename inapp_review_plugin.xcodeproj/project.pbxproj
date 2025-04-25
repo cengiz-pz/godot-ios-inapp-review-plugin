@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B78B57ED1145217424F59C /* Pods_godot_plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E60BC636829241013B20A5E /* Pods_godot_plugin.framework */; };
 		515DBA0925EE9E1E00187A4B /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DBA0825EE9E1E00187A4B /* SwiftClass.swift */; };
 		90CAAA9924E71FF10013969F /* godot_plugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90CAAA9824E71FF10013969F /* godot_plugin.mm */; };
-		90CAAAA424E724C50013969F /* godot_plugin_class.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90CAAAA324E724C50013969F /* godot_plugin_class.mm */; };
+		90CAAAA424E724C50013969F /* inapp_review_plugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90CAAAA324E724C50013969F /* inapp_review_plugin.mm */; };
+		94A1B0B2910D06DA0F4D3D3C /* Pods_inapp_review_plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380C444E6383B0C8ACA7CA7D /* Pods_inapp_review_plugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,15 +27,16 @@
 
 /* Begin PBXFileReference section */
 		1A3D1E30D9DC57319C20B62B /* Pods-godot_plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin.release.xcconfig"; path = "Target Support Files/Pods-godot_plugin/Pods-godot_plugin.release.xcconfig"; sourceTree = "<group>"; };
-		3E60BC636829241013B20A5E /* Pods_godot_plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_godot_plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		380C444E6383B0C8ACA7CA7D /* Pods_inapp_review_plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inapp_review_plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		403D7C7BCFBA671DEF15AE95 /* Pods-godot_plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin.debug.xcconfig"; path = "Target Support Files/Pods-godot_plugin/Pods-godot_plugin.debug.xcconfig"; sourceTree = "<group>"; };
-		515DBA0725EE9E1D00187A4B /* godot_plugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "godot_plugin-Bridging-Header.h"; sourceTree = "<group>"; };
 		515DBA0825EE9E1E00187A4B /* SwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
-		90CAAA9424E71FF10013969F /* libgodot_plugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgodot_plugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		90CAAA9424E71FF10013969F /* libinapp_review_plugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libinapp_review_plugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CAAA9724E71FF10013969F /* godot_plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = godot_plugin.h; sourceTree = "<group>"; };
 		90CAAA9824E71FF10013969F /* godot_plugin.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin.mm; sourceTree = "<group>"; };
-		90CAAAA324E724C50013969F /* godot_plugin_class.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin_class.mm; sourceTree = "<group>"; };
-		90CAAAA524E724D00013969F /* godot_plugin_class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = godot_plugin_class.h; sourceTree = "<group>"; };
+		90CAAAA324E724C50013969F /* inapp_review_plugin.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = inapp_review_plugin.mm; sourceTree = "<group>"; };
+		90CAAAA524E724D00013969F /* inapp_review_plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inapp_review_plugin.h; sourceTree = "<group>"; };
+		AAE936A0178A8EA9BB753CEA /* Pods-inapp_review_plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inapp_review_plugin.debug.xcconfig"; path = "Target Support Files/Pods-inapp_review_plugin/Pods-inapp_review_plugin.debug.xcconfig"; sourceTree = "<group>"; };
+		D5F7A9D28867FD798F31BF3B /* Pods-inapp_review_plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inapp_review_plugin.release.xcconfig"; path = "Target Support Files/Pods-inapp_review_plugin/Pods-inapp_review_plugin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B78B57ED1145217424F59C /* Pods_godot_plugin.framework in Frameworks */,
+				94A1B0B2910D06DA0F4D3D3C /* Pods_inapp_review_plugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +56,8 @@
 			children = (
 				403D7C7BCFBA671DEF15AE95 /* Pods-godot_plugin.debug.xcconfig */,
 				1A3D1E30D9DC57319C20B62B /* Pods-godot_plugin.release.xcconfig */,
+				AAE936A0178A8EA9BB753CEA /* Pods-inapp_review_plugin.debug.xcconfig */,
+				D5F7A9D28867FD798F31BF3B /* Pods-inapp_review_plugin.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -62,7 +65,7 @@
 		90CAAA8B24E71FF10013969F = {
 			isa = PBXGroup;
 			children = (
-				90CAAA9624E71FF10013969F /* godot_plugin */,
+				90CAAA9624E71FF10013969F /* inapp_review */,
 				90CAAA9524E71FF10013969F /* Products */,
 				90CAAAA824E72A8A0013969F /* Frameworks */,
 				66EA7AD27171A8F93A267403 /* Pods */,
@@ -72,28 +75,27 @@
 		90CAAA9524E71FF10013969F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90CAAA9424E71FF10013969F /* libgodot_plugin.a */,
+				90CAAA9424E71FF10013969F /* libinapp_review_plugin.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		90CAAA9624E71FF10013969F /* godot_plugin */ = {
+		90CAAA9624E71FF10013969F /* inapp_review */ = {
 			isa = PBXGroup;
 			children = (
 				90CAAA9724E71FF10013969F /* godot_plugin.h */,
 				90CAAA9824E71FF10013969F /* godot_plugin.mm */,
-				90CAAAA524E724D00013969F /* godot_plugin_class.h */,
-				90CAAAA324E724C50013969F /* godot_plugin_class.mm */,
+				90CAAAA524E724D00013969F /* inapp_review_plugin.h */,
+				90CAAAA324E724C50013969F /* inapp_review_plugin.mm */,
 				515DBA0825EE9E1E00187A4B /* SwiftClass.swift */,
-				515DBA0725EE9E1D00187A4B /* godot_plugin-Bridging-Header.h */,
 			);
-			path = godot_plugin;
+			path = inapp_review;
 			sourceTree = "<group>";
 		};
 		90CAAAA824E72A8A0013969F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E60BC636829241013B20A5E /* Pods_godot_plugin.framework */,
+				380C444E6383B0C8ACA7CA7D /* Pods_inapp_review_plugin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90CAAA9324E71FF10013969F /* godot_plugin */ = {
+		90CAAA9324E71FF10013969F /* inapp_review_plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90CAAA9D24E71FF10013969F /* Build configuration list for PBXNativeTarget "godot_plugin" */;
+			buildConfigurationList = 90CAAA9D24E71FF10013969F /* Build configuration list for PBXNativeTarget "inapp_review_plugin" */;
 			buildPhases = (
 				DD9BF3CC2255FDE9321FE7D1 /* [CP] Check Pods Manifest.lock */,
 				90CAAA9024E71FF10013969F /* Sources */,
@@ -114,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = godot_plugin;
+			name = inapp_review_plugin;
 			productName = godot_plugin;
-			productReference = 90CAAA9424E71FF10013969F /* libgodot_plugin.a */;
+			productReference = 90CAAA9424E71FF10013969F /* libinapp_review_plugin.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90CAAA8F24E71FF10013969F /* Build configuration list for PBXProject "godot_plugin" */;
+			buildConfigurationList = 90CAAA8F24E71FF10013969F /* Build configuration list for PBXProject "inapp_review_plugin" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90CAAA9324E71FF10013969F /* godot_plugin */,
+				90CAAA9324E71FF10013969F /* inapp_review_plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +170,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-godot_plugin-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-inapp_review_plugin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -182,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90CAAAA424E724C50013969F /* godot_plugin_class.mm in Sources */,
+				90CAAAA424E724C50013969F /* inapp_review_plugin.mm in Sources */,
 				515DBA0925EE9E1E00187A4B /* SwiftClass.swift in Sources */,
 				90CAAA9924E71FF10013969F /* godot_plugin.mm in Sources */,
 			);
@@ -233,6 +235,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"PluginClass=InappReviewPlugin",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +293,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"PluginClass=InappReviewPlugin",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -303,7 +313,7 @@
 		};
 		90CAAA9E24E71FF10013969F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 403D7C7BCFBA671DEF15AE95 /* Pods-godot_plugin.debug.xcconfig */;
+			baseConfigurationReference = AAE936A0178A8EA9BB753CEA /* Pods-inapp_review_plugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
@@ -365,7 +375,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "godot_plugin/godot_plugin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "inapp_review/godot_plugin-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +384,7 @@
 		};
 		90CAAA9F24E71FF10013969F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A3D1E30D9DC57319C20B62B /* Pods-godot_plugin.release.xcconfig */;
+			baseConfigurationReference = D5F7A9D28867FD798F31BF3B /* Pods-inapp_review_plugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
@@ -427,7 +437,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "godot_plugin/godot_plugin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "inapp_review/godot_plugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -436,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90CAAA8F24E71FF10013969F /* Build configuration list for PBXProject "godot_plugin" */ = {
+		90CAAA8F24E71FF10013969F /* Build configuration list for PBXProject "inapp_review_plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90CAAA9B24E71FF10013969F /* Debug */,
@@ -445,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90CAAA9D24E71FF10013969F /* Build configuration list for PBXNativeTarget "godot_plugin" */ = {
+		90CAAA9D24E71FF10013969F /* Build configuration list for PBXNativeTarget "inapp_review_plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90CAAA9E24E71FF10013969F /* Debug */,

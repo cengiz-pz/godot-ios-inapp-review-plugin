@@ -4,7 +4,7 @@
 #import <Foundation/Foundation.h>
 
 #import "godot_plugin.h"
-#import "godot_plugin_class.h"
+#import "inapp_review_plugin.h"
 #import "core/config/engine.h"
 
 PluginClass *plugin;
