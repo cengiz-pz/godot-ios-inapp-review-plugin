@@ -4,7 +4,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-plugin_name = 'godot_plugin'
+plugin_name = 'inapp_review_plugin'
 
 project "#{plugin_name}.xcodeproj"
 workspace "./#{plugin_name}.xcodeproj/project.xcworkspace"

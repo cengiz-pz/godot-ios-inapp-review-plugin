@@ -193,8 +193,8 @@ function build_plugin()
 
 	GODOT_VERSION=$(cat ./godot/GODOT_VERSION)
 
-	SCHEME=${1:-godot_plugin}
-	PROJECT=${2:-godot_plugin.xcodeproj}
+	SCHEME=${1:-inapp_review_plugin}
+	PROJECT=${2:-inapp_review_plugin.xcodeproj}
 	OUT=InappReviewPlugin
 	CLASS=InappReviewPlugin
 
