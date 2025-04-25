@@ -7,10 +7,10 @@
 #import "inapp_review_plugin.h"
 #import "core/config/engine.h"
 
-PluginClass *plugin;
+InappReviewPlugin *plugin;
 
 void InappReviewPlugin_init() {
-	plugin = memnew(PluginClass);
+	plugin = memnew(InappReviewPlugin);
 	Engine::get_singleton()->add_singleton(Engine::Singleton("InappReviewPlugin", plugin));
 }
 

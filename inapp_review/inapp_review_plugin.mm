@@ -18,9 +18,9 @@ String const REVIEW_FLOW_LAUNCH_FAILED_SIGNAL = "review_flow_launch_failed";
 /*
  * Bind plugin's public interface
  */
-void PluginClass::_bind_methods() {
-	ClassDB::bind_method(D_METHOD("generate_review_info"), &PluginClass::generate_review_info);
-	ClassDB::bind_method(D_METHOD("launch_review_flow"), &PluginClass::launch_review_flow);
+void InappReviewPlugin::_bind_methods() {
+	ClassDB::bind_method(D_METHOD("generate_review_info"), &InappReviewPlugin::generate_review_info);
+	ClassDB::bind_method(D_METHOD("launch_review_flow"), &InappReviewPlugin::launch_review_flow);
 
 	ADD_SIGNAL(MethodInfo(REVIEW_INFO_GENERATED_SIGNAL));
 	ADD_SIGNAL(MethodInfo(REVIEW_INFO_GENERATION_FAILED_SIGNAL));
@@ -29,23 +29,23 @@ void PluginClass::_bind_methods() {
 }
 
 // Only for platform parity.
-void PluginClass::generate_review_info() {
+void InappReviewPlugin::generate_review_info() {
 	NSLog(@"InappReviewPlugin generate_review_info");
 
 	emit_signal(REVIEW_INFO_GENERATED_SIGNAL);
 }
 
-void PluginClass::launch_review_flow() {
+void InappReviewPlugin::launch_review_flow() {
 	NSLog(@"InappReviewPlugin launch_review_flow");
 	[SwiftClass launch_review_flow];
 
 	emit_signal(REVIEW_FLOW_LAUNCHED_SIGNAL);
 }
 
-PluginClass::PluginClass() {
+InappReviewPlugin::InappReviewPlugin() {
 	NSLog(@"InappReviewPlugin constructor");
 }
 
-PluginClass::~PluginClass() {
+InappReviewPlugin::~InappReviewPlugin() {
 	NSLog(@"InappReviewPlugin destructor");
 }

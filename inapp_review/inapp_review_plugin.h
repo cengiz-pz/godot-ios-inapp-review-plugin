@@ -12,7 +12,7 @@ extern String const REVIEW_FLOW_LAUNCHED_SIGNAL;
 extern String const REVIEW_FLOW_LAUNCH_FAILED_SIGNAL;
 
 
-class PluginClass : public Object {
+class InappReviewPlugin : public Object {
 	GDCLASS(InappReviewPlugin, Object);
 
 	static void _bind_methods();
@@ -21,6 +21,6 @@ public:
 	void generate_review_info();
 	void launch_review_flow();
 
-	PluginClass();
-	~PluginClass();
+	InappReviewPlugin();
+	~InappReviewPlugin();
 };

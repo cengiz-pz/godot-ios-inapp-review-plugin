@@ -206,16 +206,14 @@ function build_plugin()
 		-scheme $SCHEME \
 		-archivePath "$LIBDIR/ios_release.xcarchive" \
 		-sdk iphoneos \
-		SKIP_INSTALL=NO \
-		GCC_PREPROCESSOR_DEFINITIONS="PluginClass=${CLASS}"
+		SKIP_INSTALL=NO
 
 	xcodebuild archive \
 		-project "./$PROJECT" \
 		-scheme $SCHEME \
 		-archivePath "$LIBDIR/sim_release.xcarchive" \
 		-sdk iphonesimulator \
-		SKIP_INSTALL=NO \
-		GCC_PREPROCESSOR_DEFINITIONS="PluginClass=${CLASS}"
+		SKIP_INSTALL=NO
 
 	xcodebuild archive \
 		-project "./$PROJECT" \
@@ -223,7 +221,7 @@ function build_plugin()
 		-archivePath "$LIBDIR/ios_debug.xcarchive" \
 		-sdk iphoneos \
 		SKIP_INSTALL=NO \
-		GCC_PREPROCESSOR_DEFINITIONS="DEBUG_ENABLED=1 PluginClass=${CLASS}"
+		GCC_PREPROCESSOR_DEFINITIONS="DEBUG_ENABLED=1"
 
 	xcodebuild archive \
 		-project "./$PROJECT" \
@@ -231,7 +229,7 @@ function build_plugin()
 		-archivePath "$LIBDIR/sim_debug.xcarchive" \
 		-sdk iphonesimulator \
 		SKIP_INSTALL=NO \
-		GCC_PREPROCESSOR_DEFINITIONS="DEBUG_ENABLED=1 PluginClass=${CLASS}"
+		GCC_PREPROCESSOR_DEFINITIONS="DEBUG_ENABLED=1"
 
 	mv $LIBDIR/ios_release.xcarchive/Products/usr/local/lib/lib${SCHEME}.a $LIBDIR/ios_release.xcarchive/Products/usr/local/lib/${OUT}.a
 	mv $LIBDIR/sim_release.xcarchive/Products/usr/local/lib/lib${SCHEME}.a $LIBDIR/sim_release.xcarchive/Products/usr/local/lib/${OUT}.a
